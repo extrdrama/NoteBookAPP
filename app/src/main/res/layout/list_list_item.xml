@@ -1,0 +1,54 @@
+<!-- list_item_layout.xml -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <!-- 按钮容器 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end">
+
+        <!-- 第一个按钮 -->
+        <ImageButton
+            android:id="@+id/button1"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/edit_modify_icon"/>
+
+        <!-- 第二个按钮 -->
+        <ImageButton
+            android:id="@+id/button2"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@drawable/delete_trash_icon"/>
+    </LinearLayout>
+
+    <!-- 标题 -->
+
+    <!-- 描述文本 -->
+    <TextView
+        android:id="@+id/item_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Description of the list item goes here. You can customize it as needed."
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="8dp" />
+
+    <!-- 日期或其他信息 -->
+    <TextView
+        android:id="@+id/item_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_description"
+        android:text="Date or additional info"
+        android:textSize="12sp"
+        android:textColor="@color/grey" />
+
+</RelativeLayout>
